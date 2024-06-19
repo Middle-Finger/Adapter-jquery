@@ -1,0 +1,879 @@
+/* 重置和基本样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    position: absolute;
+}
+
+
+
+.big {
+    background-image: url(src/ogMs_bg.jpg);
+    background-size: contain;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .menu-button{
+    display: none;
+} */
+
+
+#container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    background-color: #0056b3;
+
+
+}
+
+#list {
+
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-color: saddlebrown;
+
+}
+
+#list img {
+    width: 180%;
+    height: 100%;
+
+    background-color: saddlebrown;
+}
+
+
+/* 小圆点区域 */
+
+#buttons {
+
+    height: 10px;
+    width: 100px;
+    /* background-color: #000000; */
+    position: absolute;
+    margin-left: 429px;
+    margin-top: 220px;
+
+}
+
+#buttons span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: none;
+    margin-right: 5px;
+}
+
+#buttons .on {
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/* 按钮区域 */
+
+.arrow {
+    cursor: pointer;
+    display: block;
+    line-height: 29px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 200;
+    background-color: white;
+    color: #000000;
+}
+
+/* .arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+} */
+
+/* #container:hover .arrow {
+    display: block;
+} */
+
+#prev {
+    margin-left: 5px;
+    margin-top: 130px;
+    z-index: 400;
+
+}
+
+#next {
+    margin-left: 924px;
+    margin-top: 130px;
+    z-index: 400;
+}
+
+
+.icon_input {
+    margin-left: 1rem;
+    /* background-color: #0056b3; */
+    width: 3rem;
+    display: flex;
+    flex: 1;
+    height: 3.5rem;
+    color: white;
+    border: none;
+    position: relative;
+
+
+}
+
+
+.icon_use {
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    background-image: url(src/search.png);
+    background-size: 1.7rem 1.7rem;
+    /*引入图片图片*/
+    background-repeat: no-repeat;
+    /*设置图片不重复*/
+    background-position: 0.4rem 1.3rem;
+    /*图片显示的位置*/
+    width: 4rem;
+    /*设置图片显示的宽*/
+    height: 4rem;
+    /* background-color: #0056b3; */
+    /*图片显示的高*/
+}
+
+.icon_use_two {
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    background-image: url(src/cancel.png);
+    background-size: 1.7rem 1.7rem;
+    /*引入图片图片*/
+    background-repeat: no-repeat;
+    /*设置图片不重复*/
+    background-position: 50% 1.4rem;
+    color: white;
+    margin-left: 22.5rem;
+    /*图片显示的位置*/
+    width: 4rem;
+    /*设置图片显示的宽*/
+    height: 4rem;
+    /* background-color: #0056b3; */
+    /*图片显示的高*/
+}
+
+.search {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    width: calc(100vw);
+    margin-top: 1rem;
+    border-radius: 3rem;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: url(src/search.png) no-repeat;
+    background-position: 2rem 0.8rem; */
+
+}
+
+.search::placeholder {
+    color: white;
+
+}
+
+.logo_img {
+    display: flex;
+    flex: 2.5;
+    width: calc(50vw);
+    height: calc(10vh);
+    /* background-color: #000000; */
+}
+
+.imglogo {
+    width: auto;
+    height: 90%;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 1px;
+    position: relative;
+    z-index: 999;
+
+}
+
+/* 头部和页脚样式 */
+.site-header {
+    width: 919px;
+    height: 64px;
+    display: flex;
+    /* background-color: #ddd; */
+
+}
+
+
+
+.site-main {
+    margin-top: 8px;
+    width: 959px;
+    height: 50%;
+    /* background-color: #a6ff00; */
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+
+
+
+/* .upper-box {
+    
+    display: flex;
+    flex:1;
+    
+    background: #ddd;
+    
+    
+} */
+
+.lower-box {
+    margin: 0 20px;
+    margin-top: 10px;
+    flex: 1;
+    /* 等高 */
+    display: flex;
+    /* 水平排列子元素 */
+    justify-content: space-between;
+    /* 子元素等宽并有间隔 */
+
+    position: relative;
+    /* 为设置间隔做准备 */
+}
+
+.right-box p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.left-box p {
+    font-size: 12px;
+
+}
+
+.bluebtn {
+    border-radius: 20px;
+    background-color: #296395;
+    width: 130px;
+    height: 25px;
+    color: white;
+    font-size: 12px;
+}
+
+.whiteside_one {
+    background-color: #fff;
+    flex: 1;
+    margin-bottom: 0.3rem;
+}
+
+.whiteside_one img {
+    margin: 0.4rem;
+}
+
+.whiteside_two {
+    background-color: #fff;
+    flex: 1;
+}
+
+.whiteside_two img {
+    margin: 0.4rem;
+}
+
+.left-box,
+.center-box,
+.right-box {
+    flex: 1;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* 等宽 */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* 黑色背景，50% 透明度 */
+    /* 其他样式 */
+    color: white;
+    margin: 0 2.5px;
+    /* 左右边距为2.5px，总间隔为5px */
+}
+
+/* 如果需要设置间隔，可以使用伪元素 */
+.lower-box::after,
+.left-box::after,
+.right-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    /* 设置间隔宽度 */
+
+}
+
+.lower-box::after {
+    left: 33.333%;
+    /* 中间盒子的左边界 */
+}
+
+.left-box::after,
+.right-box::after {
+    width: 2.5px;
+    /* 左右盒子的间隔宽度 */
+}
+
+.left-box::after {
+    right: 0;
+}
+
+.right-box::after {
+    left: 0;
+}
+
+
+
+
+
+/* 导航栏样式 */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer {
+    background-color: #F7941E;
+    margin-top: 15px;
+    width: 100%;
+    height: 152px;
+    border-top: 1px solid #3A261D;
+    /* 边框颜色 */
+    box-shadow: 0 -15px 4px #000000fb;
+    /* 上边框阴影效果 */
+    display: flex;
+
+}
+
+.lefttwo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.allitem {
+    display: flex;
+
+}
+
+.site-footer p {
+    font-size: 10px;
+    color: black;
+    padding-top: 5px;
+
+
+}
+
+.site-footer h6 {
+    padding-bottom: 5px;
+
+}
+
+.copyright {
+    /* background-color: #007bff; */
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+.copyright p {
+    padding-bottom: 3px;
+}
+
+.one {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* background-color: #0056b3; */
+    height: 80px;
+    margin-right: 60px;
+    margin-left: 270px;
+    margin-top: 15px;
+
+}
+
+.two {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* background-color: #0056b3; */
+    height: 80px;
+    margin-right: 60px;
+    margin-top: 15px;
+}
+
+.three {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* background-color: #0056b3; */
+    height: 80px;
+    margin-right: 60px;
+    margin-top: 15px;
+}
+
+.four {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* background-color: #0056b3; */
+    height: 80px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #296395;
+}
+
+.righttext {
+    background-color: white;
+    width: 130px;
+    height: 100px;
+    display: flex;
+    margin-top: 15px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.righttext p {
+    font-size: 7px;
+    padding-top: 14px;
+}
+
+.orangetext {
+    color: #EA941E;
+    margin-bottom: 15px;
+
+}
+
+.orangetext_two {
+    color: #EA941E;
+    margin-bottom: 15px;
+
+}
+
+.rightitem {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 130px;
+    height: 136px;
+    display: flex;
+    /* background-color: #007bff; */
+}
+
+.rightitem img {
+    width: 100%;
+    height: 95%;
+}
+
+
+
+/*  手机 小屏幕设备，宽度小于600px */
+@media screen and (max-width: 700px) {
+    .site-header {
+        display: flex;
+        justify-content: center;
+        width: calc(100vw);
+        height: calc(10vh);
+    }
+
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: -250px; /* 菜单初始隐藏 */
+        width: 250px; /* 菜单宽度 */
+        height: calc(50vh);
+        background-color: #333;
+        color: #fff;
+        transition: left 0.3s; /* 平滑滑动效果 */
+        z-index: 1000; /* 确保菜单在其他内容之上 */
+      }
+       
+      .side-menu ul {
+        list-style: none;
+        padding: 20px;
+      }
+       
+      .side-menu li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 0;
+        display: block;
+      }
+       
+      .hamburger-menu {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin-top: 1.5rem;
+        margin-right: 2rem;
+      }
+      
+      .hamburger-menu .line {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #000000;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      /* 可以添加一些伪类来改变点击时的样式，例如 */
+      .hamburger-menu.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      
+      .hamburger-menu.active .line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger-menu.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    
+
+
+
+    .logo_img{
+        display: flex;
+        flex:1;
+    }
+    .big{
+        background-image: url(src/ogMs_bg.jpg);
+        background-size: cover;
+        
+      
+    }
+
+    .icon_input {
+        display: none;
+    }
+
+    .site-main {
+        width: calc(100vw);
+        height: calc(3ovh);
+    }
+
+    #buttons {
+
+        height: 1rem;
+        width: 10rem;
+        /* background-color: #000000; */
+        position: absolute;
+        margin-left: 14.5rem;
+        margin-top: 22rem;
+
+    }
+
+    h6 {
+        font-size: ;
+
+    }
+
+    #buttons span {
+        cursor: pointer;
+        float: left;
+        border: 0.1rem solid #ffffff;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: none;
+        margin-right: 0.5rem;
+    }
+
+    #buttons .on {
+        background: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+
+
+    #next {
+        margin-left: calc(91vw);
+        position: absolute;
+    }
+
+    .container {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vw);
+        height: calc(3ovh);
+        position: absolute;
+    }
+
+    .lower-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-box {
+
+        width: calc(100vw);
+        height: calc(3ovh);
+    }
+
+    .center-box {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw);
+        height: calc(3ovh);
+    }
+
+    .right-box {
+
+        width: calc(100vw);
+        height: calc(3ovh);
+
+    }
+
+    .center-box img {
+        width: calc(95vw);
+        height: calc(3ovh);
+        margin-top: 1rem;
+    }
+
+    .site-footer {
+        position: relative;
+        width: calc(100vw);
+        height: calc(60vh);
+        display: flex;
+
+    }
+
+    .allitem {
+
+        width: calc(100vw);
+        height: calc(100vh);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .one {
+        margin-left: 0rem;
+    }
+
+    .copyright {
+        margin-top: -9rem;
+
+    }
+
+    .righttext {
+        margin-left: -20rem;
+        width: calc(80vw);
+    }
+
+    .rightitem {
+        width: calc(40vw);
+    }
+
+    /* 在这里应用适合小屏幕的样式 */
+}
+
+/* PC 宽度大于1200px */
+@media screen and (min-width: 1200px) {
+    .hamburger-menu{
+        display: none;
+    }
+    
+}
+
+/* 平板  小于  1199 大于501px */
+@media screen and (max-width: 1199px) and (min-width: 501px) {
+    .imglogo {
+        width: auto;
+        height: 90%;
+        margin-left: 8rem;
+    }
+
+    .allitem {
+        margin-left: -26rem;
+        margin-top: 3rem;
+    }
+
+    .big {
+        display: flex;
+        align-items: center;
+        background-image: url(src/ogMs_bg.jpg);
+        background-size: cover;
+        width: calc(100vw);
+        height: calc(100vh);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .site-main {}
+
+    .one,
+    .two,
+    .three,
+    .four {
+        margin-right: 3rem;
+    }
+
+    .copyright {
+        margin-left: 1rem;
+    }
+
+    .site-header {
+        width: calc(100vw);
+        height: calc(10vh);
+    }
+
+    .container {
+        width: calc(100vw);
+        height: calc(10vh);
+    }
+
+    .site-main {
+        width: calc(100vw);
+        height: calc(60vh);
+    }
+
+    .site-footer {
+        background-color: #F7941E;
+        margin-top: 15px;
+        bottom: 0px;
+        width: calc(100vw);
+        height: calc(20vh);
+        border-top: 1px 0px outset #212121bf;
+        /* 边框颜色 */
+        box-shadow: 0 -20px 40px rgb(121, 38, 38);
+
+        /* 上边框阴影效果 */
+
+    }
+
+}
+
+
+
+
+
+li {
+    list-style: none;
+    color: white;
+
+}
+
+ul.nav li {
+    width: 153px;
+}
+
+
+ul.nav>li {
+    float: left;
+
+}
+
+ul.nav li h5 {
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+}
+
+ul.nav>li>h5 {
+    background: #1f2021;
+}
+
+ul.nav>li>ul>li h5 {
+    background: #F7941E;
+}
+
+ul.nav>li h5:hover,
+.choice {
+    background: #F7941E !important;
+    color: black;
+}
+
+ul>li>ul {
+    display: none;
+}
+
+ul>li.on>ul {
+    position: absolute;
+    display: block;
+}
+
+ul.nav li {
+    position: relative;
+}
+
+ul.nav>li>ul>li ul {
+    position: absolute;
+    top: 0;
+    right: -153px;
+}
+
+ul.nav span.sub {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 0;
+    width: 10px;
+    height: 40px;
+    background: url(images/arrows.png) no-repeat center center;
+}
+
+/* 页面主要内容样式 */
+
+
+/* 其他样式 */
+/* 在这里添加其他CSS样式来匹配效果图 */
